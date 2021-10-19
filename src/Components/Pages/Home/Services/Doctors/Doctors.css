@@ -1,0 +1,25 @@
+.doc-item{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.432);
+}
+.doc-item:hover .doctors-description{
+    margin-top: -20px;
+    margin-bottom: 20px
+
+}
+.doc-item:hover img{
+    transform: scale(1.1);
+}
+
+.docs-img{
+    transition: .4s;
+}
+.doctors-description{
+    background-color: white;
+    transition: .4s;
+    z-index: 22;
+}
+.doctors-subtitle{
+    color: #0092FF;
+    font-size: 15px;
+    line-height: 40px;
+}

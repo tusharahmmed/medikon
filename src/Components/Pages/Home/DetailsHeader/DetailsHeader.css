@@ -1,0 +1,20 @@
+.emergency-case{
+    background-color: #091D3E;
+}
+.doctors-timetabel{
+    background-color: #43D5CB;
+    background-image: linear-gradient(#43d5cb,#42cec4 to right);
+}
+.opening-hours{
+    background-color: #0092FF;
+    
+}
+tr td:nth-child(1){
+    text-align: left;
+}
+tr td:nth-child(2){
+    text-align: right;
+}
+tr{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.548);
+}

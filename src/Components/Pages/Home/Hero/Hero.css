@@ -1,0 +1,16 @@
+.hero-title{
+    color: rgb(9, 29, 62);
+}
+.hero-description{
+    color: #4C4C67;
+}
+.hero-icons img{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:600px) {
+    .hero-icons img{
+        margin-bottom: 10px;
+    }
+}

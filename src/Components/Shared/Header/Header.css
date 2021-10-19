@@ -1,0 +1,46 @@
+.logo{
+    max-height: 47px;
+    padding-right: 35px;
+    margin-right: 15px;
+}
+
+.search-icon{
+    padding: 12px 40px 12px 15px;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+nav a{
+    line-height: 120px;
+    font-size: 15px;
+    letter-spacing: .02em;
+    color: #091d3e;
+    font-weight: 700;
+    cursor: pointer;
+    padding-right: 2px;
+}
+nav a:hover{
+    line-height: 118px;
+    border-bottom: 2px solid #0092ff;
+}
+.appoinment-btn{
+    background-color: #0092ff;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0px 20px;
+    line-height: 46px;
+}
+
+@media only screen and (max-width:480px) {
+    
+    nav a{
+        line-height: 45px;
+    }
+    .search-icon{
+        margin-right: 0px;
+    }
+    nav a:hover{
+        line-height: 45px;
+        border-bottom: none;
+    }
+}

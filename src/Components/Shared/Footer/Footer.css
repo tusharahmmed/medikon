@@ -1,0 +1,12 @@
+.footer{
+    background-color: #061939;
+    color: rgba(255, 255, 255, 0.822);
+}
+.footer p{
+    font-weight: 700;
+}
+.num{
+    color: rgb(88, 88, 245);
+    text-decoration: underline;
+    font-weight: 700;
+}
