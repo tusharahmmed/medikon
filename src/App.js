@@ -5,7 +5,6 @@ import Hero from './Components/Pages/Home/Hero/Hero';
 import DetailsHeader from './Components/Pages/Home/DetailsHeader/DetailsHeader';
 import Footer from './Components/Shared/Footer/Footer';
 import Services from './Components/Pages/Home/Services/Services';
-import Doctors from './Components/Pages/Home/Services/Doctors/Doctors';
 import NotFound from './Components/Pages/NotFound/NotFound';
 import Login from './Components/Pages/Login/Login';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
@@ -13,6 +12,8 @@ import Register from './Components/Pages/Register/Register';
 import Contact from './Components/Pages/Contact/Contact';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Doctors from './Components/Pages/Home/Doctors/Doctors';
+import SingleService from './Components/Pages/SingleService/SingleService';
 
 function App() {
   return (
@@ -59,11 +60,17 @@ function App() {
             <Footer></Footer>
           </Route>
 
-          <Route path="/services">
+          <Route exact path="/services">
             <Header></Header>
             <Services></Services>
             <Footer></Footer>
           </Route>
+
+          <PrivateRoute path="/services/:serviceId">
+            <Header></Header>
+            <SingleService></SingleService>
+            <Footer></Footer>
+          </PrivateRoute>
 
           <Route path="*">
             <NotFound></NotFound>
